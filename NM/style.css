@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    direction: rtl;
+    padding-bottom: 40px;
+}
+
+.container {
+    width: 90%;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    z-index: 999;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 30px 0 15px;
+}
+
+.main-title {
+    font-size: 32px;
+    font-weight: 900;
+    color: #064e3b;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.via-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #064e3b;
+    margin-bottom: 10px;
+}
+
+.tags-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tag {
+    background: #e6f4ea;
+    color: #064e3b;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.sub-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: #064e3b;
+    margin-bottom: 12px;
+}
+
+.description {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+/* Stats Card */
+.stats-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    margin-bottom: 25px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 20px;
+    font-weight: 800;
+    color: #064e3b;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 700;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 30px;
+    background: #f1f5f9;
+}
+
+/* Features Bar */
+.features-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin-bottom: 25px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #064e3b;
+}
+
+/* Green Banner */
+.green-banner {
+    background: #064e3b;
+    color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 24px;
+    text-align: center;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(6, 78, 59, 0.15);
+}
+
+.green-banner h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.green-banner p {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Steps Nav */
+.steps-nav {
+    background: #f1f5f9;
+    padding: 12px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    font-weight: 700;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.steps-nav span.active {
+    color: #064e3b;
+}
+
+/* Calculator Section */
+.calc-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: #064e3b;
+    margin-bottom: 4px;
+}
+
+.calc-sub {
+    text-align: center;
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.calc-card {
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.amount-pill {
+    display: inline-block;
+    background: #064e3b;
+    color: #ffffff;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.amount-display {
+    font-size: 48px;
+    font-weight: 900;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.amount-display small {
+    font-size: 16px;
+    color: #64748b;
+}
+
+.net-amount-card {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    padding: 10px 14px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.net-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #166534;
+}
+
+.net-value {
+    font-size: 16px;
+    font-weight: 900;
+    color: #064e3b;
+}
+
+.calc-label {
+    font-size: 18px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.calc-hint {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #064e3b;
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.range-limits {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 700;
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+.btn-submit {
+    width: 100%;
+    background: #064e3b;
+    color: #ffffff;
+    border: none;
+    padding: 16px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: #04382a;
+}
+
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+}
+
+/* Sections Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 26px;
+    font-weight: 900;
+    color: #064e3b;
+}
+
+.section-header p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* Steps Cards */
+.step-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.02);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.step-num {
+    font-size: 18px;
+    font-weight: 800;
+    color: #cbd5e1;
+}
+
+.step-content h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #064e3b;
+    margin-bottom: 6px;
+}
+
+.step-content p {
+    font-size: 12px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* FAQ Styles */
+.faq-item {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.faq-item summary {
+    font-size: 15px;
+    font-weight: 800;
+    color: #064e3b;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item summary::after {
+    content: "❯";
+    font-size: 12px;
+    color: #34d399;
+    transform: rotate(90deg);
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(-90deg);
+}
+
+.faq-answer {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #475569;
+    line-height: 1.5;
+    padding-top: 8px;
+    border-top: 1px solid #f1f5f9;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلفة ميسّرة بطريقة شرعية</title>
+    <!-- خط تجوال من Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- ربط ملف CSS الخارجي -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- زر الواتساب العائم -->
+    <a id="whatsappFloat" href="#" target="_blank" class="floating-whatsapp" aria-label="تواصل معنا عبر الواتساب">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="white">
+            <path d="M16 2a13 13 0 0 0-11.27 19.5L3 29l7.73-1.63A13 13 0 1 0 16 2zm0 24a11 11 0 0 1-5.6-1.53l-.4-.24-4.16.88.89-4.06-.26-.42A11 11 0 1 1 16 26zm6.05-8.24c-.33-.17-1.96-.97-2.27-1.08-.3-.11-.52-.17-.74.17-.22.33-.85 1.08-1.04 1.3-.19.22-.39.25-.72.08-.33-.17-1.39-.51-2.65-1.63a9.87 9.87 0 0 1-1.83-2.28c-.19-.33-.02-.51.14-.68.15-.15.33-.39.5-.58.17-.19.22-.33.33-.55.11-.22.06-.42-.03-.58-.08-.17-.74-1.79-1.02-2.45-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.58.08-.88.42s-1.16 1.14-1.16 2.78 1.19 3.23 1.35 3.45c.17.22 2.34 3.58 5.68 5.02.79.34 1.41.55 1.89.7.8.25 1.52.22 2.09.13.64-.1 1.96-.8 2.24-1.58.28-.78.28-1.44.2-1.58-.09-.14-.31-.22-.64-.39z"/>
+        </svg>
+    </a>
+
+    <div class="container">
+        <!-- قسم الواجهة الرئيسية (Hero Section) -->
+        <section class="hero">
+            <h1 class="main-title">سلفة ميسّرة<br>بطريقة شرعية</h1>
+            
+            <div class="via-text">عبر</div>
+            <div class="tags-group">
+                <span class="tag">#امكان</span>
+                <span class="tag">#تمارا</span>
+                <span class="tag">#تابي</span>
+            </div>
+
+            <h2 class="sub-title">سلفة فورية - حول مشترياتك إلى كاش</h2>
+            <p class="description">نشتري لك جوال عبر إمكان أو تمارا أو تابي، ومن ثم نقوم ببيعه لك ونحوّل المبلغ مباشرة إلى حسابك البنكي.</p>
+
+            <div class="stats-card">
+                <div class="stat-item">
+                    <div class="stat-number">12 👥</div>
+                    <div class="stat-label">مستخدم يطلب الآن</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">5-10 ⏱️</div>
+                    <div class="stat-label">دقائق للتحويل</div>
+                </div>
+            </div>
+
+            <div class="features-bar">
+                <div class="feature-item">🛡️ بدون كفيل</div>
+                <div class="feature-item">⚡ موافقة فورية</div>
+                <div class="feature-item">🏷️ رسوم تنافسية</div>
+            </div>
+
+            <div class="green-banner">
+                <h2>نغطي دفعتك الأولى</h2>
+                <p>إذا ما عندك مبلغ الدفعة الأولى لتابي أو تمارا، حنا ندفعها عنك ونخصمها من سلفتك، عشان تستلم المبلغ بسهولة.</p>
+            </div>
+
+            <div class="steps-nav">
+                <span class="active">أختر سلفتك</span>
+                <span>‹</span>
+                <span>أدفع تقسيط</span>
+                <span>‹</span>
+                <span>أستلم الكاش</span>
+            </div>
+        </section>
+
+        <!-- قسم الحاسبة -->
+        <section>
+            <h2 class="calc-title">حاسبة السلفة الاحترافية</h2>
+            <p class="calc-sub">احسب سلفتك واطلبها بكل سهولة.</p>
+
+            <div class="calc-card">
+                <div class="amount-pill">مبلغ السلفة المطلوب</div>
+                <div class="amount-display"><span id="amountValue">1000</span> <small>ر.س</small></div>
+
+                <!-- توضيح المبلغ الصافي بعد خصم النسبة -->
+                <div class="net-amount-card">
+                    <span class="net-label">المبلغ التقريبي للتحويل بعد الخصم:</span>
+                    <span class="net-value"><span id="netAmountValue">850</span> ر.س</span>
+                </div>
+
+                <div class="calc-label">اختر المبلغ المطلوب</div>
+                <div class="calc-hint">اسحب لتغيير المبلغ</div>
+
+                <input type="range" id="loanSlider" min="150" max="7000" step="50" value="1000">
+                <div class="range-limits">
+                    <span>150 ر.س</span>
+                    <span>7000 ر.س</span>
+                </div>
+
+                <a id="submitBtn" href="#" target="_blank" class="btn-submit">
+                    ‹ تقديم الطلب الآن عبر الواتساب
+                </a>
+
+                <div class="trust-badges">
+                    <span>✔️ طلب آمن</span>
+                    <span>⚡ إيداع فوري</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- خطوات العمل -->
+        <section>
+            <div class="section-header">
+                <h2>كيف تبدأ؟</h2>
+                <p>خطوات بسيطة للحصول على مبلغك.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-content">
+                    <h3>أختر المبلغ</h3>
+                    <p>بعد ما تختار السلفة راح نجهزها لك عشان تستلمها.</p>
+                </div>
+                <div class="step-num">01</div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-content">
+                    <h3>الدفع بالتقسيط</h3>
+                    <p>نكمل العملية ونغطي الدفعة الأولى عند الحاجة.</p>
+                </div>
+                <div class="step-num">02</div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-content">
+                    <h3>استلام السلفة</h3>
+                    <p>نحوّل السلفة مباشرة إلى حسابك البنكي خلال دقائق وبسرعة فائقة.</p>
+                </div>
+                <div class="step-num">03</div>
+            </div>
+        </section>
+
+        <!-- الأسئلة الشائعة -->
+        <section style="margin-top: 30px;">
+            <div class="section-header">
+                <h2>إجابات سريعة</h2>
+                <p>كل المعلومات التي تحتاجها هنا.</p>
+            </div>
+
+            <details class="faq-item">
+                <summary>شروط الأهلية</summary>
+                <div class="faq-answer">أن يكون لديك حساب فعال في إمكان أو تمارا أو تابي ولديك حد ائتماني متاح.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>متى توصلني السلفة؟</summary>
+                <div class="faq-answer">فور إكمال الطلب يتم التحويل لحسابك البنكي خلال 5 إلى 10 دقائق.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>هل هناك فترة انتظار لاستلام المبلغ؟</summary>
+                <div class="faq-answer">لا يوجد أي انتظار، العملية فورية بالكامل.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>إذا عندي متعثرات بالتقسيط؟</summary>
+                <div class="faq-answer">يعتمد ذلك على المتاح لك داخل تطبيق إمكان أو تمارا أو تابي.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>هل الخدمة للسعوديين فقط؟</summary>
+                <div class="faq-answer">الخدمة متاحة لجميع المواطنين والمقيمين بالمملكة.</div>
+            </details>
+        </section>
+    </div>
+
+    <!-- ربط ملف JavaScript الخارجي -->
+    <script src="script.js"></script>
+</body>
+</html>
